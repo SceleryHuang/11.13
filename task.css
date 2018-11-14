@@ -1,19 +1,18 @@
-.calendar{
+#tab.calendar{
     text-align: center;
-    background-color: aqua;
+    background-color: #000000;
     overflow: hidden;
 }
 
-.active{
-    background-color: whitesmoke;
-}
-
-
-.calendar>ul>li{
-    width: 300px;
-    height:300px;
-    margin: 2%;
+#tab.calendar>ul>li{
+    width: 31%;
+    height:31%;
+    margin: 1%;
     border-radius: 10%;
     float:left;
-    background-color:orange;
+    background-color:#007ca3;
+}
+
+#tab>ul>li.active{
+    background-color: whitesmoke;
 }
