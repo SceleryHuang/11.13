@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xuanxiangka</title>
+    <style>
+        #div1 .active{
+            background: gold;
+        }
+
+        #div1 div{
+            height: 200px;
+            width: 200px;
+            background: aquamarine;
+            display: none;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var oDiv = document.getElementById("div1");
+            var button = oDiv.getElementsByTagName("input");
+            var adiv = oDiv.getElementsByTagName("div");
+
+            for(var i = 0;i<button.length;i++){
+
+                button[i].index = i;
+                button[i].onclick = function () {
+
+                    for(var i = 0;i<button.length;i++){
+                        button[i].className = '';
+                        adiv[i].style.display = 'none';
+                    }
+                    this.className = 'active';
+                    adiv[this.index].style.display = "block";
+
+                };
+            };
+
+
+        }
+    </script>
+</head>
+<body>
+<div id = "div1">
+    <input id = "b1"  class = "active" type="button" value="傻子"/>
+    <input id = "b2" type="button" value="智障"/>
+    <input id = "b3" type="button" value="神经病"/>
+    <input id = "b4" type="button" value="二货"/>
+
+    <div style="display: block">00000</div>
+    <div>11111</div>
+    <div>22222</div>
+    <div>33333</div>
+</div>
+</body>
+</html>

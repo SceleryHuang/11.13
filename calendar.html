@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calendar</title>
+    <link rel = "stylesheet" type="text/css" href="task.css">
+    <script>
+        window.onload= function () {
+          var oDiv = document.getElementById("tab");
+          var aLi = oDiv.getElementsByTagName('li');
+          var oTxt = document.getElementById("txt");;
+          for (var i = 0;i<aLi.length;i++){
+              aLi[i].onmouseover = function () {
+
+                  for(var i = 0;i<aLi.length;i++){
+                      aLi[i].className = '';
+                  }
+                  this.className = 'active';
+
+              };
+          }
+        };
+    </script>
+
+</head>
+<body>
+        <div id = "tab" class="calendar">
+            <ul>
+                <li class="active"><h2>1</h2><p>Jan</p></li>
+                <li><h2>2</h2><p>Fer</p></li>
+                <li><h2>3</h2><p>Mar</p></li>
+                <li><h2>4</h2><p>Apr</p></li>
+                <li><h2>5</h2><p>May</p></li>
+                <li><h2>6</h2><p>Jun</p></li>
+                <li><h2>7</h2><p>Jul</p></li>
+                <li><h2>8</h2><p>Aug</p></li>
+                <li><h2>9</h2><p>Sep</p></li>
+                <li><h2>10</h2><p>Oct</p></li>
+                <li><h2>11</h2><p>Nov</p></li>
+                <li><h2>12</h2><p>Dec</p></li>
+            </ul>
+        </div>
+        <div id = "txt" class="text">
+            <h2>1月活动</h2>
+            <p>1月活动就是玩</p>
+        </div>
+
+
+
+
+</body>
+</html>

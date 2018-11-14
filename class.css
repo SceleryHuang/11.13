@@ -1,0 +1,41 @@
+body{
+    padding: 30px;
+}
+ul,li{
+    margin:0;
+    padding: 0;
+}
+li{
+    list-style:none;
+}
+.wrap{
+    width: 315px;
+    height: 315px;
+    margin:0 auto;
+    padding: 0 0 5px 5px;
+    overflow: hidden;
+    background: #007ca3
+}
+.wrap li{
+    width: 100px;
+    height: 100px;
+    line-height: 50px;
+    margin:5px 5px 0 0;
+    text-align: center;
+    background: #f0f0f0;
+    float: left;
+    position:relative;
+}
+.wrap li a{
+    width: 100px;
+    height: 100px;
+    display: block;
+    text-decoration: none;
+    color: #a90c40
+}
+.wrap li a:hover{
+    border: 5px  solid #dd0000;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+}

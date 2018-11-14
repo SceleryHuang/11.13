@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quanxuan</title>
+    <script>
+        window.onload = function () {
+            var mBu0 = document.getElementById("But0");
+            var mBu1 = document.getElementById("But1");
+            var mBu2 = document.getElementById("But2");
+            var mdiv = document.getElementById("d1");
+            var mycheck = mdiv.getElementsByTagName("input");
+
+            mBu0.onclick = function () {
+                for(var i = 0;i<mycheck.length;i++){
+                    mycheck[i].checked= true;
+                }
+            };
+            mBu1.onclick = function () {
+                for(var i = 0;i<mycheck.length;i++){
+                    mycheck[i].checked= false;
+                }
+            };
+            mBu2.onclick = function () {
+                for(var i = 0;i<mycheck.length;i++){
+                    if(mycheck[i].checked== true){
+                        mycheck[i].checked= false;
+                    }
+                    else{
+                        mycheck[i].checked= true;
+                    }
+                }
+            };
+
+
+        }
+    </script>
+</head>
+<body>
+<input id = "But0" type="button" value="全选" >
+<input id = "But1" type="button" value="不选" >
+<input id = "But2" type="button" value="反选" >
+<div id = "d1">
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+    <input type="checkbox"/><br>
+</div>
+</body>
+</html>

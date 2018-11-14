@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frameset</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            float:left;
+            border:1px solid blue;
+            margin: 4px;
+        }
+
+    </style>
+    <script>
+        window.onload = function setcolor() {
+            var oDiv = document.getElementsByTagName("div");
+
+            for (var i = 0;i<oDiv.length;i++){
+                oDiv[i].style.background = "red";
+            }
+        }
+        setcolor()
+    </script>
+</head>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</html>

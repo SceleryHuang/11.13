@@ -1,0 +1,19 @@
+.calendar{
+    text-align: center;
+    background-color: aqua;
+    overflow: hidden;
+}
+
+.active{
+    background-color: whitesmoke;
+}
+
+
+.calendar>ul>li{
+    width: 300px;
+    height:300px;
+    margin: 2%;
+    border-radius: 10%;
+    float:left;
+    background-color:orange;
+}
